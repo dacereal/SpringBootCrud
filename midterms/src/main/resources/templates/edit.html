@@ -16,17 +16,18 @@
             <a href="/course" class="btn btn-primary">Back to List</a>
         </div>
 
-        <div th:if="${courses != null}">
+        <div th:if="${course != null}">
             <form th:action="@{/course/{id}(id=${course.id})}" method="post">
                 <input type="hidden" name="id" th:value="${course.id}">
 
                 <div class="mb-3">
                     <label>Course Name:</label>
-                    <input type="text" name="name" class="form-control" th:value="${course.nam}" required>
+                    <input type="text" name="name" class="form-control" th:value="${course.name}" required>
                 </div>
 
                 <div class="mb-3">
                     <label>Author:</label>
+                    <input type="text" name="author" class="form-control" th:value="${course.author}" required>
                
                 </div>
 
@@ -46,7 +47,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-success">Update</button>
-                <a href="/courses" class="btn btn-secondary">Cancel</a>
+                <a href="/course" class="btn btn-secondary">Cancel</a>
             </form>
         </div>
     </div>
