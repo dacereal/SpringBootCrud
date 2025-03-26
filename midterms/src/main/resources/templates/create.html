@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Course</title>
+    <title>Add Student</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container mt-5">
-        <h2>Add Courses</h2>
+        <h2>Add Student</h2>
         <form action="/course" method="post">
             <div class="mb-3">
-                <label for="id">Course ID:</label>
+                <label for="id">Student ID:</label>
                 <input type="number" id="id" name="id" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="name">Course Name:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="author">Author:</label>
-                <input type="text" id="author" name="author" class="form-control" required>
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="section" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="category">Category:</label>
-                <select id="category" name="category" class="form-control" required>
-                    <option value="" disabled selected>Select a genre</option>
-                    <option value="Fiction">Fiction</option>
-                    <option value="Non-Fiction">Non-Fiction</option>
-                    <option value="Science Fiction">Science Fiction</option>
-                    <option value="Fantasy">Fantasy</option>
-                    <option value="Mystery">Mystery</option>
-                    <option value="Thriller">Thriller</option>
-                    <option value="Biography">Biography</option>
-                    <option value="Self-Help">Self-Help</option>
-                    <option value="Historical">Historical</option>
+                <label for="courses">Course:</label>
+                <select id="courses" name="courses" class="form-control" required>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSED">BSED</option>
+                    <option value="BSCS">BSCS</option>
+                    <option value="BSCE">BSCE</option>
+                    <option value="BME">BME</option>
+                    <option value="BSN">BSN</option>
+                    <option value="BSBM">BSBM</option>
+                    <option value="BSEE">BSEE</option>
+                    <option value="BSMT">BSMT</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-success">Save</button>
