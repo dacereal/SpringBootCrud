@@ -15,7 +15,7 @@ public class CourseService {
     @Autowired
     private CourseSpringDataJpaRepository repository;
 
-    public List<Course> getAllEmployees() {
+    public List<Course> getAllCourses() {
         return repository.findAll();
     }
 
