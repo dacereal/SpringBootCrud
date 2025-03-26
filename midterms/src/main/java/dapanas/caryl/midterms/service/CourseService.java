@@ -23,7 +23,7 @@ public class CourseService {
         return repository.findById(id).orElse(null);
     }
 
-    public Course saveEmployee(Course course) {
+    public Course saveCourse(Course course) {
         return repository.save(course);
     }
 
