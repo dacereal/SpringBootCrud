@@ -9,7 +9,7 @@
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Course List</h2>
-        <a href="/course/new" class="btn btn-primary mb-3">Add Course</a>
+        <a href="/course/new" class="btn btn-primary mb-3">Add Student</a>
 
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
@@ -26,7 +26,7 @@
                     <td th:text="${course.id}"></td>
                     <td th:text="${course.name}"></td>
                     <td th:text="${course.section}"></td>
-                    <td th:text="${course.atecgory}"></td>
+                    <td th:text="${course.courses}"></td>
                     <td>
                         <a th:href="@{/course/edit/{id}(id=${course.id})}" class="btn btn-warning btn-sm">Edit</a>
                         <a th:href="@{/course/delete/{id}(id=${course.id})}" class="btn btn-danger btn-sm" 
