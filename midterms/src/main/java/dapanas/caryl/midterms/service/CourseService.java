@@ -19,7 +19,7 @@ public class CourseService {
         return repository.findAll();
     }
 
-    public Course getEmployeeById(Long id) {
+    public Course getCourseId(Long id) {
         return repository.findById(id).orElse(null);
     }
 
