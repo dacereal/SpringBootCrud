@@ -25,8 +25,8 @@
                 <tr th:each="course : ${course}">
                     <td th:text="${course.id}"></td>
                     <td th:text="${course.name}"></td>
-                    <td th:text="${course.author}"></td>
-                    <td th:text="${course.category}"></td>
+                    <td th:text="${course.section}"></td>
+                    <td th:text="${course.atecgory}"></td>
                     <td>
                         <a th:href="@{/course/edit/{id}(id=${course.id})}" class="btn btn-warning btn-sm">Edit</a>
                         <a th:href="@{/course/delete/{id}(id=${course.id})}" class="btn btn-danger btn-sm" 
