@@ -10,16 +10,16 @@ public class Course {
     private Long id;
 
     private String name;
-    private String author;
-    private String category;
+    private String section;
+    private String courses;
 
     public Course() {}
 
-    public Course(Long id, String name, String author, String category) {
+    public Course(Long id, String name, String section, String courses) {
         this.id = id;
         this.name = name;
-        this.author = author;
-        this.category = category;
+        this.section = section;
+        this.courses = courses;
     }
 
     // Getters and setters
