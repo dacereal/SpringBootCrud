@@ -18,8 +18,8 @@ public class CourseController {
     private CourseService service;
 
     @GetMapping
-    public String listEmployees(Model model) {
-        List<Course> employees = service.getAllEmployees();
+    public String listCourse(Model model) {
+        List<Course> courses = service.getAllCourses();
         model.addAttribute("course", employees);
         return "index";
     }
@@ -32,26 +32,26 @@ public class CourseController {
 
     @PostMapping
     public String saveEmployee(@ModelAttribute Course course) {
-        service.saveEmployee(course);
+        service.saveCourse(course);
         return "redirect:/course";
     }
 
     @GetMapping("/edit/{id}")
     public String showEditForm(@PathVariable Long id, Model model) {
-        model.addAttribute("course", service.getEmployeeById(id));
+        model.addAttribute("course", service.getCourseId(id));
         return "edit";
     }
 
     @PostMapping("/{id}")
     public String updateEmployee(@PathVariable Long id, @ModelAttribute Course course) {
     	course.setId(id);
-        service.saveEmployee(course);
+        service.saveCourse(course);
         return "redirect:/course";
     }
 
     @GetMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable Long id) {
-        service.deleteEmployee(id);
+        service.deleteCourse(id);
         return "redirect:/course";
     }
 }
