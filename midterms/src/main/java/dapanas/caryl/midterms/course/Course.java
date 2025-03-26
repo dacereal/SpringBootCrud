@@ -30,14 +30,14 @@ public class Course {
     public void setName(String name) { this.name = name; }
 
     public String getSection() { return section; }
-    public void setSection(String author) { this.section = section; }
+    public void setSection(String section) { this.section = section; }
     
     public String getCourses() { return courses; }
-    public void setCourses(String category) {this.courses = courses; }
+    public void setCourses(String courses) {this.courses = courses; }
 
     @Override
     public String toString() {
-        return "Course [id=" + id + ", name=" + name + ", author=" + author + ", category=" + category + "]";
+        return "Course [id=" + id + ", name=" + name + ", section=" + section + ", courses=" + courses + "]";
     }
 
 }
