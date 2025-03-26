@@ -15,19 +15,19 @@ public class CourseService {
     @Autowired
     private CourseSpringDataJpaRepository repository;
 
-    public List<Course> getAllEmployees() {
+    public List<Course> getAllCourses() {
         return repository.findAll();
     }
 
-    public Course getEmployeeById(Long id) {
+    public Course getCourseId(Long id) {
         return repository.findById(id).orElse(null);
     }
 
-    public Course saveEmployee(Course course) {
+    public Course saveCourse(Course course) {
         return repository.save(course);
     }
 
-    public void deleteEmployee(Long id) {
+    public void deleteCourse(Long id) {
         repository.deleteById(id);
     }
 }
