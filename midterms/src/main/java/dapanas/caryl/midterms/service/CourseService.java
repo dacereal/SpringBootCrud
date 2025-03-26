@@ -27,7 +27,7 @@ public class CourseService {
         return repository.save(course);
     }
 
-    public void deleteEmployee(Long id) {
+    public void deleteCourse(Long id) {
         repository.deleteById(id);
     }
 }

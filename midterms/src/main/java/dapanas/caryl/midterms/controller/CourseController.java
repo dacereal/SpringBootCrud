@@ -19,8 +19,8 @@ public class CourseController {
 
     @GetMapping
     public String listCourse(Model model) {
-        List<Course> courses = service.getAllCourses();
-        model.addAttribute("course", courses);
+        List<Course> course = service.getAllCourses();
+        model.addAttribute("course", course);
         return "index";
     }
 
