@@ -6,8 +6,8 @@ import dapanas.caryl.midterms.course.Course;
 
 import java.util.List;
 public interface CourseSpringDataJpaRepository extends JpaRepository<Course, Long> {
-    List<Course> findByAuthor(String author);
+    List<Course> findBySection(String section);
     List<Course> findByName(String name);
-    List<Course> findByCategory(String category);
+    List<Course> findByCourses(String courses);
 }
 
